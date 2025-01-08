@@ -7,8 +7,10 @@ from langchain_groq import ChatGroq
 
 load_dotenv()
 
-GROQ_API_KEY = os.getenv("GROQ_API_KEY") if "GROQ_API_KEY" in os.environ else st.secrets["GROQ_API_KEY"]["value"]
-LANGCHAIN_API_KEY = os.getenv("LANGCHAIN_API_KEY") if "LANGCHAIN_API_KEY" in os.environ else st.secrets["LANGCHAIN_API_KEY"]["value"]
+
+GROQ_API_KEY = os.getenv("GROQ_API_KEY") if "GROQ_API_KEY" in os.environ else st.secrets["GROQ_API_KEY"]
+LANGCHAIN_API_KEY = os.getenv("LANGCHAIN_API_KEY") if "LANGCHAIN_API_KEY" in os.environ else st.secrets["LANGCHAIN_API_KEY"]
+
 
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 
