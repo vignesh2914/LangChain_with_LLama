@@ -72,16 +72,16 @@ if prompt_input:
         st.write("Response time:", time.process_time() - start)
         st.write(response['answer'])
         
-        # Display relevant documents using an expander
-        with st.expander("Document Similarity Search"):
-            if "context" in response:
-                for i, doc in enumerate(response["context"]):
-                    st.write(f"Document {i+1}:")
-                    st.write(f"Snippet: {doc['page_content'][:300]}...")  # Display the first 300 chars of the document content
-                    st.write(f"URL: {urls[i]}")
-                    st.write("-" * 50)
-            else:
-                st.write("No context found for the provided input.")
+        # # Display relevant documents using an expander
+        # with st.expander("Document Similarity Search"):
+        #     if "context" in response:
+        #         for i, doc in enumerate(response["context"]):
+        #             st.write(f"Document {i+1}:")
+        #             st.write(f"Snippet: {doc['page_content'][:300]}...")  # Display the first 300 chars of the document content
+        #             st.write(f"URL: {urls[i]}")
+        #             st.write("-" * 50)
+        #     else:
+        #         st.write("No context found for the provided input.")
 
     except Exception as e:
         st.error(f"Error during processing: {e}")
