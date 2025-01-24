@@ -6,3 +6,8 @@ langchain-ollama
 ipykernel
 python-dotenv
 streamlit
+sentence-transformers
+faiss-cpu
+python-docx
+tensorflow
+tensorflow_hub
