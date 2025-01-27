@@ -42,7 +42,7 @@ if "vector" not in st.session_state:
 st.title("WebSite Link Based - Chatbot for Datanetiix")
 
 # Initialize the Groq model with the API key
-llm = ChatGroq(groq_api_key=groq_api_key, model_name="llama-3.1-70b-versatile")
+llm = ChatGroq(groq_api_key=groq_api_key, model_name="llama-3.3-70b-versatile")
 
 # Define the chat prompt
 prompt = ChatPromptTemplate.from_template("""
