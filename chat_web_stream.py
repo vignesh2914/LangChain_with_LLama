@@ -18,7 +18,9 @@ urls = [
     "https://www.datanetiix.com/leadership.php",
     "https://www.datanetiix.com/artificial-intelligence-and-machine-learning.php",
     "https://www.datanetiix.com/mobile-apps.php", 
-    "https://www.datanetiix.com/wearable-app-development.php"
+    "https://www.datanetiix.com/wearable-app-development.php",
+    "https://www.datanetiix.com/about-us.php",
+    "https://www.datanetiix.com/web-desktop-client-applications.php"
 ]
 
 # Initialize Sentence-Transformers embeddings
