@@ -41,7 +41,7 @@ if "vector" not in st.session_state:
     st.session_state.vectors = FAISS.from_documents(st.session_state.final_documents, st.session_state.embeddings)
 
 # Title for the Streamlit app
-st.title("WebSite Link Based - Chatbot for Datanetiix")
+st.title("AI Chatbot - Datanetiix")
 
 # Initialize the Groq model with the API key
 llm = ChatGroq(groq_api_key=groq_api_key, model_name="llama-3.3-70b-versatile")
