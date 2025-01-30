@@ -15,7 +15,7 @@ groq_api_key = st.secrets["api_keys"]["GROQ_API_KEY"]
 
 # Your code for loading documents, embeddings, and processing remains the same
 urls = [
-https://www.britannica.com/list/17-questions-about-health-and-wellness-answered
+"https://www.britannica.com/list/17-questions-about-health-and-wellness-answered"
 ]
 
 # Initialize Sentence-Transformers embeddings
