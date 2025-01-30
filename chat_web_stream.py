@@ -15,12 +15,7 @@ groq_api_key = st.secrets["api_keys"]["GROQ_API_KEY"]
 
 # Your code for loading documents, embeddings, and processing remains the same
 urls = [
-    "https://www.datanetiix.com/leadership.php",
-    "https://www.datanetiix.com/artificial-intelligence-and-machine-learning.php",
-    "https://www.datanetiix.com/mobile-apps.php", 
-    "https://www.datanetiix.com/wearable-app-development.php",
-    "https://www.datanetiix.com/about-us.php",
-    "https://www.datanetiix.com/web-desktop-client-applications.php"
+https://www.britannica.com/list/17-questions-about-health-and-wellness-answered
 ]
 
 # Initialize Sentence-Transformers embeddings
@@ -41,7 +36,7 @@ if "vector" not in st.session_state:
     st.session_state.vectors = FAISS.from_documents(st.session_state.final_documents, st.session_state.embeddings)
 
 # Title for the Streamlit app
-st.title("AI Chatbot - Datanetiix")
+st.title("AI Chatbot - Health_benifit")
 
 # Initialize the Groq model with the API key
 llm = ChatGroq(groq_api_key=groq_api_key, model_name="llama-3.3-70b-versatile")
