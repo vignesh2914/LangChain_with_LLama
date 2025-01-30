@@ -16,10 +16,7 @@ load_dotenv()
 # Load the Groq API key
 groq_api_key = os.environ['GROQ_API_KEY']
 urls = [
-    "https://www.datanetiix.com/leadership.php",
-    "https://www.datanetiix.com/artificial-intelligence-and-machine-learning.php",
-    "https://www.datanetiix.com/mobile-apps.php", 
-    "https://www.datanetiix.com/wearable-app-development.php"
+"https://www.britannica.com/list/17-questions-about-health-and-wellness-answered"
 ]
 
 # Initialize Sentence-Transformers embeddings
@@ -39,7 +36,7 @@ if "vector" not in st.session_state:
     # Create FAISS vector store
     st.session_state.vectors = FAISS.from_documents(st.session_state.final_documents, st.session_state.embeddings)
 
-st.title("WebSite Link Based -Chatbot Datanetiix")
+st.title("WebSite Link Based -Healthcare Chatbot")
 llm = ChatGroq(groq_api_key=groq_api_key, model_name="llama-3.1-70b-versatile")
 
 prompt = ChatPromptTemplate.from_template("""
